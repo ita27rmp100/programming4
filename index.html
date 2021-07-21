@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>برمجيات </title>
+    <link rel="stylesheet"href="style.css">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <link rel="icon"href="programming_4.jpg">
+</head>
+<body>
+    <nav id="home">
+        <div  class="boi">
+            <img style="border-radius:180px;width:150px;padding:1px;" src="programming_4.jpg">
+            <p style="font-size:17px;">
+            تقدم لكم هذه الشبكة كل ما يتعلق بالبرمجة : استفتاءات ، تحديات ، معلومات ، كورسات  ..... إلخ.
+            </p>
+        </div>
+        <div class="dors">
+            <a href="#challenge" class="dor">
+                <h3 class="title">تمارين برمجية</h3>
+                <div>
+                    <img src="program.png"class="logo">
+                    <p>ستجد في هذا القسم تمارين برمجية في مختلف اللغات تساعدك على تحسين مستواك</p>
+                </div>
+            </a>
+            <a href="#twittertc" class="dor">
+                <h3 class="title">تغريدات تويترية مفيدة</h3>
+                <div>
+                    <img src="diary.png"class="logo">
+                    <p>ستجد في هذا القسم روابط كل الثريدات و التحديات التي نشرناها في تويتر</p>
+                </div>
+            </a>
+            <a href="#pinfo" class="dor">
+                <h3 class="title">معلومات برمجية خفيفة</h3>
+                <div>
+                    <img src="info.png"class="logo">
+                    <p>ستتعرف في هذا القسم عن معلومات برمجية عشوائية عند زيارتك للصفحة</p>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <nav id="twittertc">
+        <hr>
+        <center>
+            <h2>تغريدات تويترية</h2>
+            <div class="dors">
+                <a href="https://twitter.com/search?q=from%3A%40programming_4%20%D8%AB%D8%B1%D9%8A%D8%AF&src=typed_query" class="dor">
+                    <h3 class="title">ثريدات</h3>
+                    <div>
+                        <img src="diary.png"class="logo">
+                        <p>ستجد في هذا القسم كل الثريدات الثرية بالإفادة البرمجية التي نشرناها في تويتر</p>
+                    </div>
+                </a>
+                <a href="https://twitter.com/search?q=from%3A%40programming_4%20%D8%AA%D8%AD%D8%AF%D9%8A%20%D8%A8%D8%B1%D9%85%D8%AC%D9%8A&src=typed_query" class="dor">
+                    <h3 class="title">تحديات برمجية</h3>
+                    <div>
+                        <img src="program.png"class="logo">
+                        <p>ستجد في هذا الرابط كل التحديات البرمجية المنشورة في تويتر</p>
+                    </div>
+                </a>
+                <a href="https://twitter.com/programming_4/status/1400577030287134737?s=20" class="dor">
+                    <h3 class="title">مصادر برمجية</h3>
+                    <div>
+                        <img src="lib.png"class="logo">
+                        <p>ستجد هنا جميع كنز من المصادر المفيدة لتعلم البرمجة المنشورة في حسابنا</p>
+                   </div>
+                </a>
+            </div>
+        </center>
+    </nav>
+    <nav id="challenge">
+        <hr>
+            <center>
+                <h2>تمارين برمجية</h2>
+                <div class="task" style="margin-top:50px;">
+                        <b id="">تحدي بلغة :</b>
+                        <select style="width:100px">
+                            <option>بايثون</option>
+                        </select>
+                        <button onclick="chall()">بحث</button>
+                    <hr>
+                        <p id="idea"></p>
+                    <hr>
+                    <button class="help"onclick="help_me()">مساعدة</button>
+                </div>
+            </center>
+    </nav>
+    <nav id="pinfo">
+        <hr>
+        <center>
+            <h2>معلومات برمجية مفيدة</h2>
+            <div class="task" style="margin-top:50px;">
+                <h3>هل تعلم أن ؟</h3>
+                    <hr>
+                <p id="info"></p>
+                    <hr>
+                <button class="help"onclick="info()">معلومة أخرى</button>
+            </div>
+        </center>
+    </nav>
+    <nav class="source">
+        <!--twitter-->
+        <a href="https://twitter.com/programming_4"target="_blank">
+            <img src="twitter.png"class="imgsou">
+        </a>
+        <!--telegram-->
+        <a href="https://t.me/programming_ar4"target="_blank">
+            <img src="telegram.png"class="imgsou">
+        </a>
+        <!--youtube-->
+        <a href="https://www.youtube.com/channel/UCxbkYIN_Cl_UjI-TAAQiReA"target="_blank">
+            <img src="youtube.png"class="imgsou">
+        </a>
+        <!--تقديم حسابنا-->
+        <a href="https://twitter.com/programming_4/status/1408436759743143941"target="_blank">
+            <img src="about_me.png"class="imgsou">
+        </a>
+    </nav>
+
+    <nav style="display: block;height: 75px;"></nav>
+
+    <footer>
+        <center>
+            <ul class="list">
+                <li class="head"style="float: center"onclick="document.title='برمجيات | الرئيسية'">
+                    <a class="head"href="#home">
+                       <img src="home.png"class="icon"style="border-radius:90px;">
+                    </a>
+                </li>
+                <li class="head"style="float: center"onclick="document.title='برمجيات | تمارين برمجية'">
+                    <a class="head"href="#challenge">
+                            <img src="program.png"class="icon">
+                    </a>
+                </li>
+                <li class="head"style="padding:8px 7px;"onclick="document.title='برمجيات | تغريدات تويترية'">
+                    <a class="head"href="#twittertc">
+                        <img src="diary.png"class="icon">
+                    </a>
+                </li>
+                <li class="head"style="padding:8px 7px;"onclick="document.title='برمجيات | معلومات برمجية مفيدة'">
+                    <a class="head"href="#pinfo">
+                        <img src="info.png"class="icon">
+                    </a>
+                </li>
+            </ul> 
+        </center>
+    </footer>
+    <script language="javascript" type="text/javascript" src="script.js"></script>
+</body>
+</html>
