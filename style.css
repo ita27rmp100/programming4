@@ -57,8 +57,9 @@ th{
     background-color:white;
     display:inline-block;
     margin:5px;
+    padding-bottom:3px;
     max-width:300px;
-    max-height:600px;
+    max-height:650px;
     text-decoration:none;
     color:black;
     transition: transform 0.5s
