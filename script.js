@@ -1,3 +1,54 @@
+// التقديم
+let LenOfName = 0;
+setInterval(() => {
+    let sen = "تقدم لكم هذه الشبكة كل ما يتعلق بالبرمجة : استفتاءات ، تحديات ، معلومات ، كورسات  إلى غير ذلك."
+        /*console.clear()*/
+        document.getElementById("intro").innerHTML = (
+            sen.slice(0,LenOfName) + "|"
+        )
+        LenOfName++
+    if (LenOfName==sen.length){
+        LenOfName = 0
+    }
+    },200
+)
+// التنقل
+function go(page){
+    var titles = {
+        "home":"برمجيات | الرئيسية",
+        "pinfo":"برمجيات | معلومات برمجية",
+        "challenge":"برمجيات | تمارين برمجية",
+        "source":"برمجيات | مصادر برمجية"
+    };
+    document.location = "index.html#"+page;
+    document.getElementById(page).style.display = "block";
+    document.title = titles[page];
+    function open_close(){
+        switch (page){
+            case "home":
+                document.getElementById("challenge").style.display = "none";
+                document.getElementById("pinfo").style.display = "none";
+                document.getElementById("source").style.display = "none";
+                break ;
+            case "pinfo":
+                document.getElementById("challenge").style.display = "none";
+                document.getElementById("home").style.display = "none";
+                document.getElementById("source").style.display = "none";
+                break ;   
+            case "challenge":
+                document.getElementById("pinfo").style.display = "none";
+                document.getElementById("home").style.display = "none";
+                document.getElementById("source").style.display = "none"
+                break ;
+            case "source":
+                document.getElementById("challenge").style.display = "none";
+                document.getElementById("home").style.display = "none";
+                document.getElementById("pinfo").style.display = "none"
+                break ;                    
+        }
+    }
+    setTimeout(open_close,200)
+}
 // أفكار التمارين و التحديات
 var ideas = ["قم بكتابة برنامج بايثون يقوم بحساب مجموع الأعداد من 1 إلى 100",
             "رسم مثلث قائم",
